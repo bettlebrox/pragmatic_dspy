@@ -1,0 +1,7 @@
+dspy-ai==2.5.16
+python-dotenv==1.0.1
+ipykernel==6.29.5
+langfuse==2.54.1
+beautifulsoup4==4.12.3
+boto3==1.35.72
+firecrawl-py==1.5.0

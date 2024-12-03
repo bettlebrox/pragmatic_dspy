@@ -1,0 +1,11 @@
+.venv/*
+local.env
+.DS_Store
+data/bandsintown/*
+data/dice/*
+data/foggynotions/*
+data/nialler/*
+data/ra/*
+data/rte/*
+data/visitdublin/*
+data/workmans/*
