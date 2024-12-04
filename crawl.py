@@ -9,7 +9,7 @@ dotenv.load_dotenv("local.env")
 
 def crawl(url: str):
     app = FirecrawlApp(api_key=os.getenv("FIRECRAWL_API_KEY"))
-    domain = url.split("//")[-1].split("/")[0].split(".")[0]
+    domain = url.split("//")[-1].split("/")[0].replace("www.", "").split(".")[0]
     # Crawl a website:
     crawl_status = app.crawl_url(
         url,
