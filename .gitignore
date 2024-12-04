@@ -1,5 +1,4 @@
 .venv/*
-local.env
 .DS_Store
 data/bandsintown/*
 data/dice/*

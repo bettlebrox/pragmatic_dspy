@@ -154,3 +154,20 @@ class SemanticSimilarity(dspy.Signature):
 
 
 semantic_similarity = dspy.Predict(SemanticSimilarity)
+
+
+def fetch_html(url: str) -> str:
+    """Fetch HTML content from a URL.
+
+    Args:
+        url: The URL to fetch HTML from
+
+    Returns:
+        The HTML content as a string, with just the contents of the <body> tag
+    """
+    response = requests.get(url)
+    response.raise_for_status()
+
+    soup = BeautifulSoup(response.text, "html.parser")
+    body = soup.find("body")
+    return body.decode_contents() if body else ""
