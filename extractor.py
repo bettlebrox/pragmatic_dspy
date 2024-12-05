@@ -1,10 +1,12 @@
 from datetime import datetime
+from bs4 import BeautifulSoup
 import dspy
 import os
 
 # langfuse used for LLM observability
 from langfuse.decorators import langfuse_context
 from langfuse.decorators import observe
+import requests
 
 PROJECT_NAME = "pragmatic_dspy"
 DEFAULT_MODEL = "openai/gpt-4o-mini"
